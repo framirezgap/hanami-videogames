@@ -1,0 +1,16 @@
+<h2>All videogames</h2>
+
+<% if videogames.any? %>
+  <div id="videogames">
+    <% videogames.each do |videogame| %>
+      <div class="videogame">
+        <ul>
+          <li><%= videogame.title %> by <i><%= videogame.publisher %></i></li>
+        </ul>
+      </div>
+    <% end %>
+  </div>
+<% else %>
+  <p class="placeholder">There are no videogames yet.</p>
+<% end %>
+<%= link_to 'New videogame', routes.new_videogame_path, class: 'btn', title: 'New videogame' %>

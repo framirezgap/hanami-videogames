@@ -1,0 +1,4 @@
+project=hanami_videogames
+architecture=container
+test=minitest
+template=erb

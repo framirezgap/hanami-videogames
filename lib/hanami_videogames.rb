@@ -1,0 +1,2 @@
+module HanamiVideogames
+end
